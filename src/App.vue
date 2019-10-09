@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Let's get started"/>
+    <Nav msg="Let's get started"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Nav
   }
 }
 </script>
@@ -20,8 +20,16 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  box-sizing: border-box;
+	margin:0;
+  padding:0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 </style>
