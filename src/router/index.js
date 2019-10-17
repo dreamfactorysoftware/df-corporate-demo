@@ -58,6 +58,10 @@ const Register = () => import('@/views/pages/Register')
 const Users = () => import('@/views/users/Users')
 const User = () => import('@/views/users/User')
 
+// Departments
+const Departments = () => import('@/views/departments/departments')
+const Department = () => import('@/views/departments/department')
+
 Vue.use(Router)
 
 function configRoutes() {
@@ -119,6 +123,25 @@ function configRoutes() {
               meta: { label: 'User Details'},
               name: 'User',
               component: User,
+            },
+          ]
+        },
+        {
+          path: 'departments',
+          meta: { label: 'Departments'},
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: '',
+              component: Departments,
+            },
+            {
+              path: ':id',
+              meta: { label: 'Department Details'},
+              name: 'Department',
+              component: Department,
             },
           ]
         },
