@@ -14,9 +14,14 @@ export default {
       icon: 'icon-pie-chart'
     },
     {
-      name: 'Users',
+      name: 'Employees',
       url: '/users',
       icon: 'icon-people'
+    },
+    {
+      name: 'Departments',
+      url: '/departments',
+      icon: 'icon-notebook'
     },
   ]
 }
